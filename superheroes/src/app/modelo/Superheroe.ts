@@ -1,6 +1,6 @@
 export class Superheroe {
 
-    id: number = 0;
+    id?: number;
     nombre: string = "";
     nombre_real: string = "";
     poderes: string = "";

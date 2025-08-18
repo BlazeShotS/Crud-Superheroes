@@ -112,7 +112,7 @@ export class SuperheroesComponent implements OnInit {
   eliminar = (a: ISuperheroe) => {
     let confirm = window.confirm(`Deseas eliminar a ${a.nombre}`);
     if (confirm) {
-      this.service.deleteSuperheroe(a.id).subscribe(
+      this.service.deleteSuperheroe(a.id!).subscribe(
         (resp: any) => {
           this.getSuperheroe();          // Actualiza la lista de productos y lo muestra en el navegador       
         });

@@ -1,6 +1,6 @@
 export interface ISuperheroe {
 
-    id: number;
+    id?: number;
     nombre: string;
     nombre_real: string;
     poderes: string;
