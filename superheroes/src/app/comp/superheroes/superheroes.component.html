@@ -1,0 +1,65 @@
+<p>Pantalla de Superheroes</p>
+<h1>vista de superheroes</h1>
+<div class="container-superheroes">
+    <!-- Tabla de Superhéroes -->
+    <div class="superheroes-table">
+        <h3>Superheroes</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nombre</th>
+                    <th>Nombre Real</th>
+                    <th>Poderes</th>
+                    <th>Afiliación</th>
+                    <th>URL Imagen</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let s of superheroes">
+                    <td>{{s.id}}</td>
+                    <td>{{s.nombre}}</td>
+                    <td>{{s.nombre_real}}</td>
+                    <td>{{s.poderes}}</td>
+                    <td>{{s.afiliacion}}</td>
+                    <td>
+                        <a href="{{s.url_imagen}}" target="_blank">Ver Imagen</a>
+                    </td>
+                    <td>
+                        <button class="btn btn-editar" (click)="editar(s)">Editar</button>
+                        <button class="btn btn-eliminar" (click)="eliminar(s)">Eliminar</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Formulario -->
+    <div class="formulario-container">
+        <h3>Formulario</h3>
+        <form [formGroup]="formSuperheroes">
+            <div>
+                <label for="nombre">Nombre:</label>
+                <input type="text" formControlName="nombre" id="nombre">
+            </div>
+            <div>
+                <label for="nombrereal">Nombre Real:</label>
+                <input type="text" formControlName="nombrereal" id="nombrereal">
+            </div>
+            <div>
+                <label for="poderes">Poderes:</label>
+                <input type="text" formControlName="poderes" id="poderes">
+            </div>
+            <div>
+                <label for="afiliacion">Afiliación:</label>
+                <input type="text" formControlName="afiliacion" id="afiliacion">
+            </div>
+            <div>
+                <label for="url">URL Imagen:</label>
+                <input type="text" formControlName="url" id="url">
+            </div>
+            <button class="btn btn-form" (click)="procesar()">{{textoBtn}}</button>
+        </form>
+    </div>
+</div>

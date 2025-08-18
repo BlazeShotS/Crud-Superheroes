@@ -1,0 +1,44 @@
+{
+  "superheroes": [
+    {
+      "id": 1,
+      "nombre": "Superman",
+      "nombre_real": "Clark Kent",
+      "poderes": "Vuelo",
+      "afiliacion": "Liga de la Justicia",
+      "url_imagen": "https://upload.wikimedia.org/wikipedia/en/e/eb/SupermanRoss.png"
+    },
+    {
+      "id": 2,
+      "nombre": "Abel",
+      "nombre_real": "Abel paulo",
+      "poderes": "Volar",
+      "afiliacion": "Vengadores",
+      "url_imagen": "http.Utp"
+    },
+    {
+      "id": 3,
+      "nombre": "Wonder Woman",
+      "nombre_real": "Diana Prince",
+      "poderes": "Fuerza Sobrehumana",
+      "afiliacion": "Liga de la Justicia",
+      "url_imagen": "https://upload.wikimedia.org/wikipedia/en/9/93/Wonder_Woman_1984_poster.png"
+    },
+    {
+      "id": 4,
+      "nombre": "Spider-Man",
+      "nombre_real": "Peter Parker",
+      "poderes": "Agilidad Sobrehumana",
+      "afiliacion": "Avengers",
+      "url_imagen": "https://upload.wikimedia.org/wikipedia/en/0/0c/Spider-Man_%282002%29_poster.png"
+    },
+    {
+      "id": 5,
+      "nombre": "Mikel Durand",
+      "nombre_real": "Volar",
+      "poderes": "Caza",
+      "afiliacion": "Vengadores",
+      "url_imagen": "http.www.com"
+    }
+  ]
+}
